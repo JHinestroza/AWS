@@ -1,6 +1,6 @@
 module API
 
-go 1.23
+go 1.20.12
 
 require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
