@@ -1,0 +1,1128 @@
+digraph G{
+ rankdir=LR;
+ graph [ dpi = "600" ]; 
+ forcelabels= true;
+ node [shape = plaintext];
+inode0  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 0</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>424</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:49</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">0</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">3</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">5</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">7</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">9</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">11</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">13</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">15</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">17</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">19</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode0:0-> BLOCK1_0
+BLOCK1_0 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 0</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">0</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>users.txt</td>
+<td port="2">1</td>
+</tr>
+<tr>
+<td>bin</td>
+<td port="3">2</td>
+</tr>
+</table>>];
+BLOCK1_0:2 -> inode1;
+BLOCK1_0:3 -> inode2;
+inode0:1-> BLOCK2_3
+BLOCK2_3 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 3</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">3</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>boot</td>
+<td port="2">3</td>
+</tr>
+<tr>
+<td>cdrom</td>
+<td port="3">4</td>
+</tr>
+</table>>];
+BLOCK2_3:2 -> inode3;
+BLOCK2_3:3 -> inode4;
+inode0:2-> BLOCK3_5
+BLOCK3_5 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 5</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">5</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>dev</td>
+<td port="2">5</td>
+</tr>
+<tr>
+<td>etc</td>
+<td port="3">6</td>
+</tr>
+</table>>];
+BLOCK3_5:2 -> inode5;
+BLOCK3_5:3 -> inode6;
+inode0:3-> BLOCK4_7
+BLOCK4_7 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 7</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">7</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>home</td>
+<td port="2">7</td>
+</tr>
+<tr>
+<td>lib</td>
+<td port="3">8</td>
+</tr>
+</table>>];
+BLOCK4_7:2 -> inode7;
+BLOCK4_7:3 -> inode8;
+inode0:4-> BLOCK5_9
+BLOCK5_9 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 9</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">9</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>lib64</td>
+<td port="2">9</td>
+</tr>
+<tr>
+<td>media</td>
+<td port="3">10</td>
+</tr>
+</table>>];
+BLOCK5_9:2 -> inode9;
+BLOCK5_9:3 -> inode10;
+inode0:5-> BLOCK6_11
+BLOCK6_11 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 11</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">11</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>mnt</td>
+<td port="2">11</td>
+</tr>
+<tr>
+<td>opt</td>
+<td port="3">12</td>
+</tr>
+</table>>];
+BLOCK6_11:2 -> inode11;
+BLOCK6_11:3 -> inode12;
+inode0:6-> BLOCK7_13
+BLOCK7_13 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 13</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">13</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>proc</td>
+<td port="2">13</td>
+</tr>
+<tr>
+<td>run</td>
+<td port="3">14</td>
+</tr>
+</table>>];
+BLOCK7_13:2 -> inode13;
+BLOCK7_13:3 -> inode14;
+inode0:7-> BLOCK8_15
+BLOCK8_15 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 15</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">15</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>sbin</td>
+<td port="2">15</td>
+</tr>
+<tr>
+<td>snap</td>
+<td port="3">16</td>
+</tr>
+</table>>];
+BLOCK8_15:2 -> inode15;
+BLOCK8_15:3 -> inode16;
+inode0:8-> BLOCK9_17
+BLOCK9_17 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 17</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">17</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>srv</td>
+<td port="2">17</td>
+</tr>
+<tr>
+<td>sys</td>
+<td port="3">18</td>
+</tr>
+</table>>];
+BLOCK9_17:2 -> inode17;
+BLOCK9_17:3 -> inode18;
+inode0:9-> BLOCK10_19
+BLOCK10_19 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 19</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">19</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>tmp</td>
+<td port="2">19</td>
+</tr>
+<tr>
+<td>var</td>
+<td port="3">20</td>
+</tr>
+</table>>];
+BLOCK10_19:2 -> inode19;
+BLOCK10_19:3 -> inode20;
+inode1  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 1</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>112</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:49</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">1</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>1</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode1:0-> FILE1_1
+FILE1_1 [label = <<table >
+<tr><td COLSPAN = '2' BGCOLOR="#CCCC00">FILE 1</td></tr>
+ <tr><td COLSPAN = '2'>1,G,root
+1,U,root,root,123
+</td></tr>
+</table>>];
+inode2  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 2</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">2</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode3  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 3</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">3</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode4  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 4</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">4</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode5  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 5</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">5</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode6  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 6</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">6</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode7  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 7</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">7</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode8  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 8</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">8</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode9  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 9</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">9</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode10  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 10</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">10</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode11  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 11</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">11</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode12  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 12</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">12</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode13  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 13</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:52</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:52</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">13</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode14  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 14</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:53</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:53</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">14</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode15  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 15</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:53</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:53</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">15</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode16  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 16</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:53</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:53</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">16</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode17  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 17</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:53</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:53</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">17</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode18  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 18</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:53</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:53</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">18</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode19  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 19</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:53</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:53</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">19</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode20  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 20</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>96</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:53</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:53</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">20</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+
+
+}

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@codemirror/basic-setup": "^0.20.0",
+    "bootstrap": "^5.3.3",
+    "react-bootstrap": "^2.10.2",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5"
+  }
+}

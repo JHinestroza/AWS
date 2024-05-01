@@ -1,0 +1,121 @@
+digraph G{
+ rankdir=LR;
+ graph [ dpi = "600" ]; 
+ forcelabels= true;
+ node [shape = plaintext];
+inode0  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 0</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>424</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:49</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">0</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>0</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode0:0-> BLOCK1_0
+BLOCK1_0 [label = <<table><tr><td COLSPAN = '2' BGCOLOR="#145A32"><font color="white">BLOCK 0</font></td></tr><tr><td BGCOLOR="#90EE90">B_NAME</td><td BGCOLOR="#90EE90" >B_INODO</td></tr>
+<tr>
+<td>.</td>
+<td port="0">0</td>
+</tr>
+<tr>
+<td>..</td>
+<td port="1">0</td>
+</tr>
+<tr>
+<td>users.txt</td>
+<td port="2">1</td>
+</tr>
+<tr>
+<td></td>
+<td port="3">-1</td>
+</tr>
+</table>>];
+BLOCK1_0:2 -> inode1;
+inode1  [label = <<table>
+<tr><td COLSPAN = '2' BGCOLOR="#000080"><font color="white">INODO 1</font></td></tr>
+ <tr><td BGCOLOR="#87CEFA">NOMBRE</td><td BGCOLOR="#87CEFA" >VALOR</td></tr>
+<tr><td>i_uid</td><td>1</td></tr>
+<tr><td>i_gid</td><td>1</td></tr>
+<tr><td>i_size</td><td>112</td></tr>
+<tr><td>i_atime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_ctime</td><td>2024-05-01 05:49</td></tr>
+<tr><td>i_mtime</td><td>2024-05-01 05:49</td></tr>
+<tr>
+<td>i_block_1</td><td port="0">1</td></tr>
+<tr>
+<td>i_block_2</td><td port="1">-1</td></tr>
+<tr>
+<td>i_block_3</td><td port="2">-1</td></tr>
+<tr>
+<td>i_block_4</td><td port="3">-1</td></tr>
+<tr>
+<td>i_block_5</td><td port="4">-1</td></tr>
+<tr>
+<td>i_block_6</td><td port="5">-1</td></tr>
+<tr>
+<td>i_block_7</td><td port="6">-1</td></tr>
+<tr>
+<td>i_block_8</td><td port="7">-1</td></tr>
+<tr>
+<td>i_block_9</td><td port="8">-1</td></tr>
+<tr>
+<td>i_block_10</td><td port="9">-1</td></tr>
+<tr>
+<td>i_block_11</td><td port="10">-1</td></tr>
+<tr>
+<td>i_block_12</td><td port="11">-1</td></tr>
+<tr>
+<td>i_block_13</td><td port="12">-1</td></tr>
+<tr>
+<td>i_block_14</td><td port="13">-1</td></tr>
+<tr>
+<td>i_block_15</td><td port="14">-1</td></tr>
+<tr>
+<td>i_block_16</td><td port="15">-1</td></tr>
+<tr><td>i_type</td><td>1</td></tr>
+<tr><td>i_perm</td><td>664</td></tr></table>>];
+inode1:0-> FILE1_1
+FILE1_1 [label = <<table >
+<tr><td COLSPAN = '2' BGCOLOR="#CCCC00">FILE 1</td></tr>
+ <tr><td COLSPAN = '2'>1,G,root
+1,U,root,root,123
+</td></tr>
+</table>>];
+
+
+}

@@ -1,0 +1,4 @@
+Mkdisk -size=50 -unit=M -fit=FF -path=C:/Users/jose_/GolandProjects/API/Discos/A.dsk
+Mkdisk -unit=k -size=51200 -fit=BF -path=C:/Users/jose_/GolandProjects/API/Discos/B.dsk
+mkDisk -size=10 -path=C:/Users/jose_/GolandProjects/API/Discos/C.dsk
+mkdisk -size=51200 -unit=K -path=C:/Users/jose_/GolandProjects/API/Discos/d.dsk

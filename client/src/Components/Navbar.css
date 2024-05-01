@@ -1,0 +1,54 @@
+.navbar {
+    height: 100%;
+    width: 175px; /* Ancho aumentado para una barra más gruesa */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333; /* Color de fondo */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    align-self: flex-start; /* Alinea la lista hacia el inicio del contenedor */
+  }
+  
+  .nav-item {
+    width: 100%;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    color: white; /* Texto de color blanco */
+    text-decoration: none;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+  }
+  
+  .nav-link i {
+    margin-left: 20px; /* Espacio para el ícono */
+    font-size: 24px;
+  }
+  
+  .link-text {
+    display: block; /* Texto siempre visible */
+    color: white; /* Color de texto blanco */
+    margin-left: 10px; /* Espacio entre el ícono y el texto */
+  }
+  
+  /* Añadido para alinear el texto y los íconos con la parte superior */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    width: 100%;
+    padding-top: 10px; /* Espacio en la parte superior */
+  }
+  
