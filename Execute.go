@@ -221,7 +221,7 @@ func funciones(token string, tks []string) string {
 				if mensaje != "" {
 					return mensaje
 				}
-				return Comandos.ValidarDatosMKFILE(tks, particion, p)
+				Comandos.ValidarDatosMKFILE(tks, particion, p)
 			}
 		} else if Comandos.Comparar(token, "pause") {
 			fmt.Println("************************************** FUNCIÓN PAUSE **************************************")
